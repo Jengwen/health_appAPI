@@ -10,11 +10,17 @@
     <h4>Unit</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.account)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.account.Id)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.account.AccountName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.account.AccountName)
         </dd>
     </dl>
 </div>

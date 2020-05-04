@@ -22,6 +22,9 @@ namespace health_app2.Controllers
         // GET: Units
         public async Task<IActionResult> Index()
         {
+            //List of units
+            List<Unit> units = await _context.Units.Include(u => u.account).ToListAsync();
+
             var applicationDbContext = _context.Units.Include(u => u.account);
             return View(await applicationDbContext.ToListAsync());
         }
