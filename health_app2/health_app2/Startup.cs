@@ -31,6 +31,7 @@ namespace health_app2
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseMySQL(
                     Configuration.GetConnectionString("DefaultConnection")));
+            
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
@@ -38,6 +39,7 @@ namespace health_app2
 
             services.AddDbContext<health_app2Context>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("health_app2Context")));
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

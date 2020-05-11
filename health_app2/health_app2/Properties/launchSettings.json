@@ -22,6 +22,14 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "health_app2 Production": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://employeehealth.site",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+
     }
   }
-}
